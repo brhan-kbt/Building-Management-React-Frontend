@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  border: 0;
+  box-shadow: none;
+  /* background-color: white !important;
+  color: black !important; */
+}
+
+.bg-I{
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/leaves.png);
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+[type='text']:focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus{
+  --tw-ring-shadow:none !important;
+      /* border-color: #2563eb; */
+      --tw-ring-color:orange !important;
+      
+  }
+
+  .MuiPaper-root.MuiDialog-paper {
+    max-width: 100% !important;
+    width: 70% !important;
+  }
+  .canvas {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #ccc;
+    position: absolute;
+  }
+  
+  .shape {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .square {
+    background-color: red;
+  }
+  
+  .circle {
+    background-color: blue;
+    border-radius: 50%;
+  }
+  
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid green;
+  }
+  
